@@ -1,6 +1,6 @@
 from fastapi import FastAPI, Depends, HTTPException, status
 from sqlalchemy.orm import Session, joinedload
-from .database import SessionLocal, engine, Base, Hospital, Role, User, Doctor
+from database import SessionLocal, engine, Base, Hospital, Role, User, Doctor
 from typing import List, Optional
 from pydantic import BaseModel
 from passlib.context import CryptContext
